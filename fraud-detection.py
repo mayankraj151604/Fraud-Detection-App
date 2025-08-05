@@ -28,7 +28,7 @@ gender_list = ["M", "F"]
 
 st.title("💳 Fraud Transaction Simulation")
 
-st.markdown("Fill in transaction details to check if it's potentially fraudulent.")
+st.markdown("We have developed a real-time, web-based fraud detection application using supervised machine learning to classify financial transactions as fraudulent or legitimate, supporting user awareness and decision-making in financial security.")
 
 # --- Transaction Info ---
 with st.form("fraud_form"):

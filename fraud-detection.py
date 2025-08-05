@@ -47,13 +47,6 @@ with st.form("fraud_form"):
     city_pop = st.number_input("City Population", min_value=0, value=50000)
     age = st.number_input("Customer Age", min_value=0, max_value=120, value=35)
 
-    latitude = st.number_input("Customer Latitude", value=35.22)
-    longitude = st.number_input("Customer Longitude", value=-80.84)
-
-    st.subheader("🏪 Merchant Location")
-    merch_lat = st.number_input("Merchant Latitude", value=35.23)
-    merch_long = st.number_input("Merchant Longitude", value=-80.83)
-
     st.subheader("⏰ Transaction Time")
     tx_time = st.time_input("Transaction Time", value=datetime.now().time())
     tx_date = st.date_input("Transaction Date", value=datetime.now().date())
@@ -78,12 +71,8 @@ if submitted:
         'gender': [gender],
         'state': [state],
         'zip': [zip_code],
-        'lat': [latitude],
-        'long': [longitude],
         'city_pop': [city_pop],
         'job': [job],
-        'merch_lat': [merch_lat],
-        'merch_long': [merch_long],
         'day': [day],
         'month': [month],
         'year': [year],

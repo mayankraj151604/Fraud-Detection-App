@@ -43,7 +43,6 @@ with st.form("fraud_form"):
 
     state = st.selectbox("Select State", state_list, index=0, key="state_select")
     zip_code = st.number_input("Zip Code", min_value=10000, value=28654)
-    city_pop = st.number_input("City Population", min_value=0, value=50000)
     age = st.number_input("Customer Age", min_value=0, max_value=120, value=35)
 
     st.subheader("⏰ Transaction Time")
@@ -70,7 +69,6 @@ if submitted:
         'gender': [gender],
         'state': [state],
         'zip': [zip_code],
-        'city_pop': [city_pop],
         'job': [job],
         'day': [day],
         'month': [month],
